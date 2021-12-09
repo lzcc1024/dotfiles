@@ -1,0 +1,143 @@
+
+! xrdb ~/.Xresources && urxvt
+! https://github.com/mohabaks/dotfiles/blob/master/.x/.Xresources
+! https://gist.github.com/menski/2176539
+! https://gist.github.com/gnaqvi/5f19839fa225a2db71c7ab23bfe5255b
+! https://www.cnblogs.com/rookieagle/p/13198178.html
+! https://segmentfault.com/a/1190000020859490
+! https://askubuntu.com/questions/19558/what-are-the-meta-super-and-hyper-keys
+! https://github.com/simmel/urxvt-resize-font
+! https://en.wikibooks.org/wiki/Guide_to_X11/Fonts
+! https://wiki.archlinux.org/title/Libinput
+! https://github.com/altercation/solarized
+! https://gist.github.com/yevgenko/1167205
+! http://good5dog5.github.io/2016/03/19/urxvt-chinese-word-birck/
+! https://master--okitavera.netlify.app/article/use-i-beam-cursor-in-rxvt-unicode/
+
+Xft.dpi:                96
+Xft.autohint:           true
+Xft.antialias:          true
+Xft.rgba:               rgb
+Xft.hinting:            true
+Xft.hintstyle:          hintslight
+Xft.lcdfilter:          lcddefault
+
+
+! URxvt.iconFile: /usr/share/icons/Yaru/scalable/apps/gnome-terminal-symbolic.svg
+
+URxvt.depth: 32
+URxvt.buffered: true
+URxvt.geometry:          80x24
+ 
+URxvt.background: [95]#2E3436
+URxvt.foreground: #D3D7CF
+ 
+URxvt.color0: #002B36
+URxvt.color8: #073642
+
+URxvt.color1: #CB4B16
+URxvt.color9: #DC322F
+
+URxvt.color2: #586E75
+URxvt.color10:  #859900
+
+URxvt.color3: #657B83
+URxvt.color11:  #B58900
+
+URxvt.color4: #839496
+URxvt.color12:  #268BD2
+
+URxvt.color5: #6C71C4
+URxvt.color13:  #D33682
+
+URxvt.color6: #93A1A1
+URxvt.color14:  #2AA198
+
+URxvt.color7: #FDF6E3
+URxvt.color15:  #EEE8D5
+
+! !! black dark/light
+! URxvt.color0: #073642
+! URxvt.color8: #002b36
+! 
+! !! red dark/light
+! URxvt.color1: #dc322f
+! URxvt.color9: #cb4b16
+! 
+! !! green dark/light
+! URxvt.color2: #859900
+! URxvt.color10: #586e75
+! 
+! !! yellow dark/light
+! URxvt.color3: #b58900
+! URxvt.color11: #657b83
+! 
+! !! blue dark/light
+! URxvt.color4: #268bd2
+! URxvt.color12: #839496
+! 
+! !! magenta dark/light
+! URxvt.color5: #d33682
+! URxvt.color13: #6c71c4
+! 
+! !! cyan dark/light
+! URxvt.color6: #2aa198
+! URxvt.color14: #93a1a1
+! 
+! !! white dark/light
+! URxvt.color7: #eee8d5
+! URxvt.color15: #fdf6e3
+
+URxvt.colorBD: #eeeeee
+URxvt.colorIT: #eeeeee
+URxvt.colorUL: #eeeeee
+
+URxvt.underlineColor: #ffffff
+
+URxvt.highlightColor: #eeeeee
+URxvt.highlightTextColor: #2e3436
+
+URxvt.cursorColor: #8ddbd1
+URxvt.cursorColor2: #e73c4e
+
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+
+! picom 或者其他 合成器 配合使用时 transparent 必须为 false 看 https://stackoverflow.com/questions/56129997/i3wm-how-do-i-set-real-transparency-for-terminal-with-urxvt
+URxvt*transparent: true
+URxvt*inheritPixmap: true
+! URxvt*shading: 0 to 99 darkens, 101 to 200 lightens
+URxvt*shading: 80
+URxvt.tintColor: grey
+
+URxvt.font: xft:Droid Sans Fallback:style=Regular:size=12,xft:WenQuanYi Micro Hei Mono:style=Regular:size=12:minspace=true
+URxvt.letterSpace: 1
+
+URxvt.scrollBar: false
+URxvt.scrollstyle: plain
+URxvt.thickness: 0
+URxvt.scrollBar_right: false
+URxvt.scrollBar_floating: false
+
+URxvt.saveLines: 10000
+
+URxvt.perl-ext-common:       default,selection-to-clipboard,matcher,selection-popup,resize-font,tabbed,ibeamcursor
+URxvt.underlineURLs:           true 
+URxvt.url-launcher:            google-chrome
+URxvt.matcher.button: 1
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+URxvt.keysym.Control-Meta-C: builtin-string:
+URxvt.keysym.Control-Meta-V: builtin-string:
+
+URxvt.tabbed.tabbar-fg: 10
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 11
+URxvt.tabbed.tab-bg: 0
+
+
