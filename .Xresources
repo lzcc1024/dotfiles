@@ -111,7 +111,7 @@ URxvt*inheritPixmap: true
 URxvt*shading: 80
 URxvt.tintColor: grey
 
-URxvt.font: xft:Droid Sans Fallback:style=Regular:size=12,xft:WenQuanYi Micro Hei Mono:style=Regular:size=12:minspace=true
+URxvt.font: xft:DejaVu Sans Mono:style=Book:size=12,xft:Droid Sans Fallback:style=Regular:size=12,xft:WenQuanYi Micro Hei Mono:style=Regular:size=12:minspace=true,xft:Noto Sans Mono CJK SC:style=Regular:size=12
 URxvt.letterSpace: 1
 
 URxvt.scrollBar: false
@@ -122,6 +122,7 @@ URxvt.scrollBar_floating: false
 
 URxvt.saveLines: 10000
 
+! URxvt.perl-lib: /your/config/file/absolute/path
 URxvt.perl-ext-common:       default,selection-to-clipboard,matcher,selection-popup,resize-font,tabbed,ibeamcursor
 URxvt.underlineURLs:           true 
 URxvt.url-launcher:            google-chrome
